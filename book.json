@@ -1,0 +1,10 @@
+{
+    "plugins": [
+		"splitter",
+		"emphasize",
+		"expandable-chapters-small"
+	],
+	"pluginsConfig": {
+   
+    }
+}
