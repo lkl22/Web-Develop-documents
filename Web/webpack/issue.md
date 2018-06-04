@@ -10,5 +10,15 @@ module.exports = {
 }
 ```
 
+#### less: Inline JavaScript is not enabled. Is it set in your options?
+
+less-loader加一个options
+
+```
+{
+    loader: "less-loader", options: {javascriptEnabled: true}
+}
+```
+
 
 
