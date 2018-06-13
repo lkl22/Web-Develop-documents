@@ -7,5 +7,6 @@
   * [Plugins](Web/webpack/plugins.md)
   * [Development](Web/webpack/development.md)
   * [Issue](Web/webpack/issue.md)
-* [Babel](babel.md)
+* [Babel](Web/babel.md)
+* [ES6](Web/es6.md)
 
