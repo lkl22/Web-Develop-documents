@@ -24,6 +24,9 @@ npm config set disturl https://npm.taobao.org/dist --global
 ```
 //杀死指定端口的进程
 netstat -utlnp|grep 9000|awk '{print $7}'| awk -F '/' '{print "kill "$1}'|sh
+//修改文件中的内容
+sed "s/192.168.2.251/${ServiceAddress}/g" /var/lib/jenkins/config/url.js > ./url.js
+sed "s/9000/${port}/g" iota-fe.conf | sed "s/dist/${port}\/&/g" > ${port}.conf
 ```
 
 
