@@ -1,3 +1,5 @@
+[https://reactjs.org/docs/react-component.html](https://reactjs.org/docs/react-component.html)
+
 #### 1.getDefaultProps
 
 作用于组件类，只调用一次，返回对象用于设置默认的`props`，对于引用值，会在实例中共享。
@@ -44,7 +46,7 @@ _在服务端中，该方法不会被调用。_
 
 组件是否应当渲染新的`props`或`state`，返回`false`表示跳过后续的生命周期方法，通常不需要使用以避免出现bug。在出现应用的瓶颈时，可通过该方法进行适当的优化。
 
-_在首次渲染期间或者调用了`forceUpdate`方法后，该方法不会被调用_
+_在首次渲染期间或者调用了_`forceUpdate`_方法后，该方法不会被调用_
 
 #### 8.componentWillUpdate
 
