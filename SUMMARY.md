@@ -9,6 +9,7 @@
   * [Issue](Web/webpack/issue.md)
 * [React](Web/react.md)
   * [生命周期](Web/react/LifeCycle.md)
+  * [State](Web/react/state.md)
 * [Mock](Web/mock.md)
 * [Babel](Web/babel.md)
 * [ES6](Web/es6.md)
