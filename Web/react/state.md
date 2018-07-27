@@ -1,4 +1,14 @@
-[https://reactjs.org/docs/state-and-lifecycle.html](https://reactjs.org/docs/state-and-lifecycle.html)
+[https://reactjs.org/docs/react-component.html\#state](https://reactjs.org/docs/react-component.html#state)
+
+**state**包含特定于此组件的数据，该数据可能会随时间而变化。 **state**是用户定义的，它应该是一个普通的**JavaScript**对象。
+
+如果某些值未用于呈现或数据流（例如，计时器ID），则不必将其置于**state**。 可以将此类值定义为组件实例上的字段**fields **。
+
+永远不要直接改变this.state，因为之后调用setState（）可能会替换你所做的突变。 把this.state看作是不可变的。
+
+
+
+[https://reactjs.org/docs/state-and-lifecycle.html](#)
 
 正确使用setState需要注意的三点：
 
@@ -24,7 +34,7 @@ The only place where you can assign`this.state`is the constructor.
 
 React可以将多个setState\(\) 调用批处理为单个更新以提高性能。
 
-因为this.props和this.state可以异步更新，所以不应该依赖它们的值来计算下一个状态。
+因为this.props和this.state可以异步更新，所以不应该依赖它们的值来计算下一个状态。
 
 For example, this code may fail to update the counter:
 
