@@ -32,7 +32,7 @@ _在服务端中，该方法不会被调用。_
 
 组件接收到新的`props`时调用，并将其作为参数`nextProps`使用，此时可以更改组件`props`及`state`。
 
-```
+```js
     componentWillReceiveProps: function(nextProps) {
         if (nextProps.bool) {
             this.setState({

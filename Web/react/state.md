@@ -16,14 +16,14 @@
 
 For example, this will not re-render a component:
 
-```
+```js
 // Wrong
 this.state.comment ='Hello';
 ```
 
 Instead, use`setState()`:
 
-```
+```js
 // Correct
 this.setState({comment:'Hello'});
 ```
@@ -38,7 +38,7 @@ React可以将多个setState\(\) 调用批处理为单个更新以提高性能�
 
 For example, this code may fail to update the counter:
 
-```
+```js
 // Wrong
 this.setState({
   counter: this.state.counter + this.props.increment,
@@ -49,7 +49,7 @@ To fix it, use a second form of`setState()`that accepts a function rather than a
 
 要修复它，请使用第二种形式的setState\(\) 接受函数而不是对象。 该函数将接收先前的state作为第一个参数，并将props作为第二个参数：
 
-```
+```js
 // Correct
 this.setState((prevState, props) => ({
   counter: prevState.counter + props.increment
@@ -62,7 +62,7 @@ this.setState((prevState, props) => ({
 
 例如，您state可能包含几个独立变量：
 
-```
+```js
 constructor(props) {
     super(props);
     this.state = {
@@ -74,7 +74,7 @@ constructor(props) {
 
 然后，您可以使用单独的setState\(\) 调用独立更新它们：
 
-```
+```js
 componentDidMount() {
     fetchPosts().then(response => {
       this.setState({
